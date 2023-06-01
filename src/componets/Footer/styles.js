@@ -6,6 +6,12 @@ export const ContainerFooter = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 200px;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
 `;
 
 export const SectionOne = styled.div`
@@ -15,6 +21,13 @@ export const SectionOne = styled.div`
     align-items: center;
     width: 500px;
     height: 85px;
+    @media screen and (max-width: 1024px) {
+        margin-left: 1.5rem;
+    }
+    @media screen and (max-width: 542px) {
+        width: 300px;
+        margin-left: 0rem;
+    }
 `;
 
 export const SectionSocials = styled.div`
@@ -33,6 +46,13 @@ export const SectionTwo = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        width: 300px;
+    }
 `;
 
 export const Options = styled.ul`
@@ -42,6 +62,9 @@ export const Options = styled.ul`
     width: 200px;
     text-align: left;
     height: 125px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 `;
 
 export const Option = styled.li`
@@ -62,6 +85,16 @@ export const SectionThree = styled.div`
     align-items: center;
     width: 500px;
     height: 95px;
+    @media screen and (max-width: 1024px) {
+        margin-right: 1.5rem;
+    }
+    @media screen and (max-width: 768px) {
+        margin-top: 1rem;
+        margin-right: 0rem;
+    }
+    @media screen and (max-width: 542px) {
+        width: 300px;
+    }
 `;
 
 export const SectionEmail = styled.form`

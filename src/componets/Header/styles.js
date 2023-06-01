@@ -6,6 +6,9 @@ export const ContainerHeader = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const SectionLogo = styled.div`

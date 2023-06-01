@@ -1,18 +1,21 @@
 import {
     ContainerBanner,
     Text,
-    Button
+    Button,
+    SectionText
 } from './styles'
 
 function Banner() {
     return (
         <ContainerBanner>
-            <Text>
-                Simplify how your team works today.
-            </Text>
-            <Button>
-                Get Started
-            </Button>
+            <SectionText>
+                <Text>
+                    Simplify how your team works today.
+                </Text>
+                <Button>
+                    Get Started
+                </Button>
+            </SectionText>
         </ContainerBanner>
     )
 }

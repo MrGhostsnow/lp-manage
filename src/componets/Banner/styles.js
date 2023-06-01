@@ -7,6 +7,13 @@ export const ContainerBanner = styled.div`
     background-color: hsl(12, 88%, 59%);
     height: 200px;
     margin-top: 5rem;
+    @media screen and (max-width: 542px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+    }
 `;
 
 export const Text = styled.h2`
@@ -16,6 +23,15 @@ export const Text = styled.h2`
     width: 25%;
     text-align: left;
     margin-left: 8rem;
+    @media screen and (max-width: 542px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
 `;
 
 export const Button = styled.button`
@@ -34,4 +50,17 @@ export const Button = styled.button`
         opacity: 0.6;
     }
 
+    @media screen and (max-width: 542px) {
+        margin-right: 0;
+    }
+
+`;
+
+export const SectionText = styled.div`
+@media screen and (max-width: 542px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 `;

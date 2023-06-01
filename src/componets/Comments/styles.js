@@ -8,6 +8,12 @@ export const ContainerComments = styled.div`
     align-items: center;
     margin-top: 5rem;
     height: 400px;
+    @media screen and (max-width: 768px) {
+        height: 450px;
+    }
+    @media screen and (max-width: 542px) {
+        height: 500px;
+    }
 `;
 
 export const Title = styled.h2`
@@ -22,6 +28,11 @@ export const SectionComments = styled.div`
     justify-content: space-between;
     width: 90%;
     margin-bottom: 2rem;
+    @media screen and (max-width: 768px) {
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 export const Card = styled.div`
@@ -31,12 +42,26 @@ export const Card = styled.div`
     justify-content: space-between;
     align-items: center;
     width: 500px;
-
+    
+    @media screen and (max-width: 1440px) {
+        width: 420px;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 300px;
+    }
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+        width: 100%;
+    }
 `;
 
 export const Picture = styled.img`
     width: 60px;
     margin-top: -2rem;
+    @media screen and (max-width: 768px) {
+        margin-top: 0rem;
+       
+    }
 `;
 
 export const Name = styled.p`
@@ -47,5 +72,8 @@ export const Name = styled.p`
 export const Comment = styled.p`
     color: hsl(227, 12%, 61%);
     font-weight: 500;
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
 `;
 
