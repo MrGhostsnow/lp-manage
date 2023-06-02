@@ -23,6 +23,14 @@ export const Text = styled.h2`
     width: 25%;
     text-align: left;
     margin-left: 8rem;
+    @media screen and (max-width: 1440px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 0;
+    }
     @media screen and (max-width: 542px) {
         display: flex;
         flex-direction: column;
@@ -50,6 +58,9 @@ export const Button = styled.button`
         opacity: 0.6;
     }
 
+    @media screen and (max-width: 1440px) {
+        margin-right: 0;
+    }
     @media screen and (max-width: 542px) {
         margin-right: 0;
     }
@@ -57,6 +68,13 @@ export const Button = styled.button`
 `;
 
 export const SectionText = styled.div`
+@media screen and (max-width: 1440px) {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+}
 @media screen and (max-width: 542px) {
     display: flex;
     flex-direction: column;

@@ -7,7 +7,7 @@ export const ContainerHeader = styled.div`
     align-items: center;
     height: 80px;
     @media screen and (max-width: 768px) {
-        display: none;
+        
     }
 `;
 
@@ -56,4 +56,74 @@ export const Button = styled.button`
         
         opacity: 0.6;
     }
+`;
+
+export const Overlay = styled.div`
+    position: fixed; 
+    display: flex; 
+    flex-direction: column;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.6); 
+    z-index: 2; 
+    cursor: pointer; 
+    align-items: center;
+`;
+
+export const SectionMobile = styled.div`
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+`;
+
+export const SectionMenu = styled.div``;
+
+export const SectionPathsMobile = styled.div`
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin-top: 3rem;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+`;
+
+export const ListPathsMobile = styled.ul`
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 600px;
+    padding: 0;
+    gap: 1.5rem;
+`;
+
+export const PathMobile = styled.li`
+    font-size: 15px;
+    font-weight: 700;
+    color:hsl(228, 39%, 23%);
+    cursor: pointer;
+    padding: 0;
+    &:hover{
+        color: hsl(227, 12%, 61%);
+    }
+`;
+
+export const SectionHeader = styled.div`
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center;
+    margin-top: 1rem;
+`;
+
+export const Icon = styled.img`
+    margin-top: -0.5rem;
 `;
